@@ -1,7 +1,12 @@
-import cv2
+from cv2 import cv2 as cv
 
 
 if __name__ == '__main__':
-    img = cv2.imgread('img/pic1.jpg')
-    cv2.imshow('Result', img)
-    cv2.waitkey(0)
+    # print(dir(numpy))
+    print(cv.__version__)
+
+    img = cv.imgread('img/pic1.jpg')
+    cv.imshow('Result',
+               img)
+    cv.waitkey(0)
+    cv.destroyallwindows()
